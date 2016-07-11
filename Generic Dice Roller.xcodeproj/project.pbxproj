@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		47E7DC5A1D33DCD5000A7761 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC591D33DCD5000A7761 /* AppDelegate.swift */; };
-		47E7DC5C1D33DCD5000A7761 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC5B1D33DCD5000A7761 /* ViewController.swift */; };
 		47E7DC5F1D33DCD5000A7761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E7DC5D1D33DCD5000A7761 /* Main.storyboard */; };
 		47E7DC611D33DCD5000A7761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E7DC601D33DCD5000A7761 /* Assets.xcassets */; };
 		47E7DC641D33DCD5000A7761 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E7DC621D33DCD5000A7761 /* LaunchScreen.storyboard */; };
 		47E7DC6F1D33DCD5000A7761 /* Generic_Dice_RollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC6E1D33DCD5000A7761 /* Generic_Dice_RollerTests.swift */; };
 		47E7DC7A1D33DCD5000A7761 /* Generic_Dice_RollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC791D33DCD5000A7761 /* Generic_Dice_RollerUITests.swift */; };
+		47E7DC881D33E140000A7761 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC871D33E140000A7761 /* MainVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +36,6 @@
 /* Begin PBXFileReference section */
 		47E7DC561D33DCD5000A7761 /* Generic Dice Roller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Generic Dice Roller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E7DC591D33DCD5000A7761 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		47E7DC5B1D33DCD5000A7761 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		47E7DC5E1D33DCD5000A7761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		47E7DC601D33DCD5000A7761 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		47E7DC631D33DCD5000A7761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +46,7 @@
 		47E7DC751D33DCD5000A7761 /* Generic Dice RollerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Generic Dice RollerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E7DC791D33DCD5000A7761 /* Generic_Dice_RollerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generic_Dice_RollerUITests.swift; sourceTree = "<group>"; };
 		47E7DC7B1D33DCD5000A7761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47E7DC871D33E140000A7761 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,11 +98,11 @@
 			isa = PBXGroup;
 			children = (
 				47E7DC591D33DCD5000A7761 /* AppDelegate.swift */,
-				47E7DC5B1D33DCD5000A7761 /* ViewController.swift */,
 				47E7DC5D1D33DCD5000A7761 /* Main.storyboard */,
 				47E7DC601D33DCD5000A7761 /* Assets.xcassets */,
 				47E7DC621D33DCD5000A7761 /* LaunchScreen.storyboard */,
 				47E7DC651D33DCD5000A7761 /* Info.plist */,
+				47E7DC871D33E140000A7761 /* MainVC.swift */,
 			);
 			path = "Generic Dice Roller";
 			sourceTree = "<group>";
@@ -256,7 +256,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				47E7DC5C1D33DCD5000A7761 /* ViewController.swift in Sources */,
+				47E7DC881D33E140000A7761 /* MainVC.swift in Sources */,
 				47E7DC5A1D33DCD5000A7761 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
