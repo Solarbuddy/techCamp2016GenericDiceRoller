@@ -1,5 +1,5 @@
 //
-//  MainVC.swift
+//  Screen2VC.swift
 //  Generic Dice Roller
 //
 //  Created by Litman, Mike on 7/11/16.
@@ -8,38 +8,25 @@
 
 import UIKit
 
-class MainVC: UIViewController
+class Screen2VC: UIViewController
 {
 
+    
     @IBOutlet weak var myLabel: UILabel!
     override func viewDidLoad()
     {
         super.viewDidLoad()
-        
+        myLabel.text = "Davis"
+
         // Do any additional setup after loading the view.
     }
-    @IBAction func screen3ButtonPressed()
+    
+    @IBAction func backButtonPressed(sender: AnyObject)
     {
-        let vc = self.storyboard?.instantiateViewControllerWithIdentifier("screen3") as! screen3VC
-        vc.text2set = self.myLabel.text!
-        self.presentViewController(vc, animated: true, completion: nil)
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
 
-    @IBAction func d4ButtonPressed(sender: AnyObject)
-    {
-        myLabel.text = "D4"
-    }
-    
-    @IBAction func d6ButtonPressed(sender: AnyObject)
-    {
-        myLabel.text = "D6"
-    }
-    
-    @IBAction func d8ButtonPressed(sender: AnyObject)
-    {
-        myLabel.text = "D8"
-    }
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

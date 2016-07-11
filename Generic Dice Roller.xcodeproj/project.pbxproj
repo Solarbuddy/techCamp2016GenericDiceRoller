@@ -14,6 +14,8 @@
 		47E7DC6F1D33DCD5000A7761 /* Generic_Dice_RollerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC6E1D33DCD5000A7761 /* Generic_Dice_RollerTests.swift */; };
 		47E7DC7A1D33DCD5000A7761 /* Generic_Dice_RollerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC791D33DCD5000A7761 /* Generic_Dice_RollerUITests.swift */; };
 		47E7DC881D33E140000A7761 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC871D33E140000A7761 /* MainVC.swift */; };
+		47E7DC8A1D33FB85000A7761 /* Screen2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC891D33FB85000A7761 /* Screen2VC.swift */; };
+		47E7DC8C1D3401E8000A7761 /* screen3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC8B1D3401E8000A7761 /* screen3VC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		47E7DC791D33DCD5000A7761 /* Generic_Dice_RollerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generic_Dice_RollerUITests.swift; sourceTree = "<group>"; };
 		47E7DC7B1D33DCD5000A7761 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		47E7DC871D33E140000A7761 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		47E7DC891D33FB85000A7761 /* Screen2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen2VC.swift; sourceTree = "<group>"; };
+		47E7DC8B1D3401E8000A7761 /* screen3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = screen3VC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				47E7DC621D33DCD5000A7761 /* LaunchScreen.storyboard */,
 				47E7DC651D33DCD5000A7761 /* Info.plist */,
 				47E7DC871D33E140000A7761 /* MainVC.swift */,
+				47E7DC891D33FB85000A7761 /* Screen2VC.swift */,
+				47E7DC8B1D3401E8000A7761 /* screen3VC.swift */,
 			);
 			path = "Generic Dice Roller";
 			sourceTree = "<group>";
@@ -256,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E7DC8A1D33FB85000A7761 /* Screen2VC.swift in Sources */,
 				47E7DC881D33E140000A7761 /* MainVC.swift in Sources */,
+				47E7DC8C1D3401E8000A7761 /* screen3VC.swift in Sources */,
 				47E7DC5A1D33DCD5000A7761 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
