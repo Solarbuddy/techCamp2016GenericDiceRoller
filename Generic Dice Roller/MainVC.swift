@@ -23,9 +23,11 @@ class MainVC: UIViewController
     
     @IBOutlet weak var d20Button: UIButton!
     
+    @IBOutlet weak var resultLabel: UILabel!
     
     
-    @IBOutlet weak var myLabel: UILabel!
+    @IBOutlet weak var rollText: UITextView!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -35,10 +37,34 @@ class MainVC: UIViewController
     @IBAction func screen3ButtonPressed()
     {
         let vc = self.storyboard?.instantiateViewControllerWithIdentifier("screen3") as! screen3VC
-        vc.text2set = self.myLabel.text!
+        vc.text2set = self.rollText.text!
         self.presentViewController(vc, animated: true, completion: nil)
     }
 
+    func rollDice(sides : Int) -> Int
+    {
+        return random() % sides + 1
+    }
+    
+    
+    
+    @IBAction func deleteButtonPressed(sender: AnyObject)
+    {
+        let parts = self.rollText.text!.componentsSeparatedByString("+")
+        self.rollText.text = ""
+        for i in 0 ..< parts.count-1
+        {
+            if(self.rollText.text! == "")
+            {
+                self.rollText.text = parts[i]
+            }
+            else
+            {
+                self.rollText.text = "\(self.rollText.text!)+\(parts[i])"
+            }
+        }
+    }
+    
     @IBAction func diceButtonPressed(sender: UIButton)
     {
         var sides = -1
@@ -66,7 +92,34 @@ class MainVC: UIViewController
         {
             sides = 20
         }
-        self.myLabel.text = "\(sides)"
+        if(self.rollText.text! == "")
+
+        {
+            self.rollText.text = "\(self.rollText.text!) D\(sides)"
+        }
+        else
+        {
+        self.rollText.text = "\(self.rollText.text!)+ D\(sides)"
+        }
+    }
+    
+    @IBAction func rollButtonPressed(sender: AnyObject)
+    {
+        let parts = self.rollText.text!.componentsSeparatedByString("+")
+        var sum = 0
+        for part in parts
+        {
+            if(part != "")
+            {
+            
+            let roll = part.componentsSeparatedByString("D")
+            let sides = Int(roll[1])!
+            let rollResult = self.rollDice(sides)
+            print(rollResult)
+            sum += rollResult
+            }
+        }
+        self.resultLabel.text = "\(sum)"
     }
     
     
@@ -87,7 +140,7 @@ class MainVC: UIViewController
             if(segue.identifier! == "screen2")
             {
                 let vc = segue.destinationViewController as! Screen2VC
-                vc.text2set = self.myLabel.text!
+                vc.text2set = self.rollText.text!
             }
         }
         // Get the new view controller using segue.destinationViewController.
