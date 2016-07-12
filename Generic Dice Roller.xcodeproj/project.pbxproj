@@ -16,6 +16,7 @@
 		47E7DC881D33E140000A7761 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC871D33E140000A7761 /* MainVC.swift */; };
 		47E7DC8A1D33FB85000A7761 /* Screen2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC891D33FB85000A7761 /* Screen2VC.swift */; };
 		47E7DC8C1D3401E8000A7761 /* screen3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC8B1D3401E8000A7761 /* screen3VC.swift */; };
+		47E7DC8E1D352C9A000A7761 /* SavedRollList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC8D1D352C9A000A7761 /* SavedRollList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		47E7DC871D33E140000A7761 /* MainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		47E7DC891D33FB85000A7761 /* Screen2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen2VC.swift; sourceTree = "<group>"; };
 		47E7DC8B1D3401E8000A7761 /* screen3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = screen3VC.swift; sourceTree = "<group>"; };
+		47E7DC8D1D352C9A000A7761 /* SavedRollList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedRollList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				47E7DC871D33E140000A7761 /* MainVC.swift */,
 				47E7DC891D33FB85000A7761 /* Screen2VC.swift */,
 				47E7DC8B1D3401E8000A7761 /* screen3VC.swift */,
+				47E7DC8D1D352C9A000A7761 /* SavedRollList.swift */,
 			);
 			path = "Generic Dice Roller";
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				47E7DC8A1D33FB85000A7761 /* Screen2VC.swift in Sources */,
 				47E7DC881D33E140000A7761 /* MainVC.swift in Sources */,
 				47E7DC8C1D3401E8000A7761 /* screen3VC.swift in Sources */,
+				47E7DC8E1D352C9A000A7761 /* SavedRollList.swift in Sources */,
 				47E7DC5A1D33DCD5000A7761 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -490,6 +494,7 @@
 				47E7DC801D33DCD5000A7761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47E7DC811D33DCD5000A7761 /* Build configuration list for PBXNativeTarget "Generic Dice RollerTests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +503,7 @@
 				47E7DC831D33DCD5000A7761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		47E7DC841D33DCD5000A7761 /* Build configuration list for PBXNativeTarget "Generic Dice RollerUITests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +512,7 @@
 				47E7DC861D33DCD5000A7761 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
