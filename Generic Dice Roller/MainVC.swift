@@ -46,6 +46,11 @@ class MainVC: UIViewController
         return random() % sides + 1
     }
     
+    @IBAction func clearButtonPressed(sender: AnyObject)
+    {
+        self.rollText.text = ""
+        Core.currentRoll = ""
+    }
     
     
     @IBAction func deletreButtonPressed(sender: AnyObject)

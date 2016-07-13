@@ -94,7 +94,26 @@ class SavedRollList: UITableViewController
         return self.rollNames.count
     }
 
+    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool
+    {
+        return true
+    }
+    
+    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath)
+    {
+        self.rollNames.removeAtIndex(indexPath.row)
+        self.rollDetails.removeAtIndex(indexPath.row)
+        
+        let defaults = NSUserDefaults.standardUserDefaults()
+        defaults.setObject(self.rollNames, forKey: "storedRollNames")
+        defaults.setObject(self.rollDetails, forKey: "storedRollDetails")
+        defaults.synchronize()
+        
+        self.tableView.reloadData()
+        
+    }
 
+    
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
