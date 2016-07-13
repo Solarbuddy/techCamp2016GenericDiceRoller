@@ -48,7 +48,7 @@ class MainVC: UIViewController
     
     
     
-    @IBAction func deleteButtonPressed(sender: AnyObject)
+    @IBAction func deletreButtonPressed(sender: AnyObject)
     {
         let parts = self.rollText.text!.componentsSeparatedByString("+")
         self.rollText.text = ""
@@ -63,6 +63,9 @@ class MainVC: UIViewController
                 self.rollText.text = "\(self.rollText.text!)+\(parts[i])"
             }
         }
+        //Our Label has been rebuilt
+        Core.currentRoll = self.rollText.text!
+        
     }
     
     @IBAction func diceButtonPressed(sender: UIButton)
@@ -101,6 +104,8 @@ class MainVC: UIViewController
         {
         self.rollText.text = "\(self.rollText.text!)+ D\(sides)"
         }
+        //RollText has been updated
+        Core.currentRoll = self.rollText.text!
     }
     
     @IBAction func rollButtonPressed(sender: AnyObject)

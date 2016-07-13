@@ -7,10 +7,77 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Save RollVC-->
+        <scene sceneID="iRf-pk-8TM">
+            <objects>
+                <viewController storyboardIdentifier="SaveRollVC" id="Qme-c0-LLb" customClass="SaveRollVC" customModule="Generic_Dice_Roller" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YQT-KI-Brt"/>
+                        <viewControllerLayoutGuide type="bottom" id="RIE-U1-8RT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HK8-NV-0R0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ioe-da-q6U">
+                                <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                                <items>
+                                    <navigationItem title="Save Roll" id="aNK-Vc-Roa">
+                                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="y1D-uF-IvY">
+                                            <connections>
+                                                <action selector="cancelButtonPressed" destination="Qme-c0-LLb" id="MAW-Gn-cIB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" title="Save" id="F9M-5c-d4j">
+                                            <connections>
+                                                <action selector="saveButtonPressed" destination="Qme-c0-LLb" id="P6z-kx-0GT"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Roll to Save" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nat-ze-eET">
+                                <rect key="frame" x="20" y="70" width="374" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="bRl-qz-dki"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name of Saved Roll" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cKQ-rd-V2N">
+                                <rect key="frame" x="20" y="103" width="374" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nat-ze-eET" firstAttribute="top" secondItem="Ioe-da-q6U" secondAttribute="bottom" constant="6" id="9Lg-NO-AJF"/>
+                            <constraint firstAttribute="trailing" secondItem="Ioe-da-q6U" secondAttribute="trailing" id="Ygq-H6-ga9"/>
+                            <constraint firstItem="Ioe-da-q6U" firstAttribute="leading" secondItem="HK8-NV-0R0" secondAttribute="leading" id="fRa-gM-SRh"/>
+                            <constraint firstItem="cKQ-rd-V2N" firstAttribute="trailing" secondItem="nat-ze-eET" secondAttribute="trailing" id="iMV-g1-ipU"/>
+                            <constraint firstItem="cKQ-rd-V2N" firstAttribute="top" secondItem="Ioe-da-q6U" secondAttribute="bottom" constant="39" id="l9I-8k-d2i"/>
+                            <constraint firstItem="nat-ze-eET" firstAttribute="leading" secondItem="HK8-NV-0R0" secondAttribute="leadingMargin" id="nBS-jj-x8R"/>
+                            <constraint firstItem="nat-ze-eET" firstAttribute="centerX" secondItem="Ioe-da-q6U" secondAttribute="centerX" id="rPd-IG-SZf"/>
+                            <constraint firstItem="Ioe-da-q6U" firstAttribute="top" secondItem="YQT-KI-Brt" secondAttribute="bottom" id="tjn-u3-TE6"/>
+                            <constraint firstItem="cKQ-rd-V2N" firstAttribute="leading" secondItem="nat-ze-eET" secondAttribute="leading" id="wtg-M5-rUW"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="nameTF" destination="cKQ-rd-V2N" id="pXe-Mo-cu0"/>
+                        <outlet property="roll2SaveLabel" destination="nat-ze-eET" id="TnN-W8-wcq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tHi-wk-OK2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="696" y="-1814"/>
+        </scene>
         <!--Rolls-->
         <scene sceneID="N8Z-GA-hfY">
             <objects>
-                <viewController id="SMT-29-eNf" sceneMemberID="viewController">
+                <viewController id="SMT-29-eNf" customClass="SavedRollsVC" customModule="Generic_Dice_Roller" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="a4m-ow-7ag"/>
                         <viewControllerLayoutGuide type="bottom" id="aUQ-qJ-w0q"/>
@@ -23,7 +90,11 @@
                                 <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                                 <items>
                                     <navigationItem title="Saved Rolls" id="751-7c-fsg">
-                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="OgP-ux-oF4"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="OgP-ux-oF4">
+                                            <connections>
+                                                <action selector="addButtonPressed" destination="SMT-29-eNf" id="95w-sg-Iwp"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -181,7 +252,7 @@
                                 <rect key="frame" x="308" y="419" width="70" height="30"/>
                                 <state key="normal" title="DEL PREV"/>
                                 <connections>
-                                    <action selector="deleteButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dET-OC-829"/>
+                                    <action selector="deletreButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zwU-DW-hgh"/>
                                 </connections>
                             </button>
                         </subviews>

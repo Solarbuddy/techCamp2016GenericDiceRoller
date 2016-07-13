@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		473129A91D367DF100C36CC0 /* SaveRollVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 473129A81D367DF100C36CC0 /* SaveRollVC.swift */; };
 		47E7DC5A1D33DCD5000A7761 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC591D33DCD5000A7761 /* AppDelegate.swift */; };
 		47E7DC5F1D33DCD5000A7761 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47E7DC5D1D33DCD5000A7761 /* Main.storyboard */; };
 		47E7DC611D33DCD5000A7761 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47E7DC601D33DCD5000A7761 /* Assets.xcassets */; };
@@ -17,6 +18,8 @@
 		47E7DC8A1D33FB85000A7761 /* Screen2VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC891D33FB85000A7761 /* Screen2VC.swift */; };
 		47E7DC8C1D3401E8000A7761 /* screen3VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC8B1D3401E8000A7761 /* screen3VC.swift */; };
 		47E7DC8E1D352C9A000A7761 /* SavedRollList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC8D1D352C9A000A7761 /* SavedRollList.swift */; };
+		47E7DC901D3675BA000A7761 /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC8F1D3675BA000A7761 /* Core.swift */; };
+		47E7DC921D3677AA000A7761 /* SavedRollsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47E7DC911D3677AA000A7761 /* SavedRollsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		473129A81D367DF100C36CC0 /* SaveRollVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveRollVC.swift; sourceTree = "<group>"; };
 		47E7DC561D33DCD5000A7761 /* Generic Dice Roller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Generic Dice Roller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47E7DC591D33DCD5000A7761 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		47E7DC5E1D33DCD5000A7761 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +57,8 @@
 		47E7DC891D33FB85000A7761 /* Screen2VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Screen2VC.swift; sourceTree = "<group>"; };
 		47E7DC8B1D3401E8000A7761 /* screen3VC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = screen3VC.swift; sourceTree = "<group>"; };
 		47E7DC8D1D352C9A000A7761 /* SavedRollList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedRollList.swift; sourceTree = "<group>"; };
+		47E7DC8F1D3675BA000A7761 /* Core.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		47E7DC911D3677AA000A7761 /* SavedRollsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedRollsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +118,9 @@
 				47E7DC891D33FB85000A7761 /* Screen2VC.swift */,
 				47E7DC8B1D3401E8000A7761 /* screen3VC.swift */,
 				47E7DC8D1D352C9A000A7761 /* SavedRollList.swift */,
+				47E7DC8F1D3675BA000A7761 /* Core.swift */,
+				47E7DC911D3677AA000A7761 /* SavedRollsVC.swift */,
+				473129A81D367DF100C36CC0 /* SaveRollVC.swift */,
 			);
 			path = "Generic Dice Roller";
 			sourceTree = "<group>";
@@ -265,8 +274,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47E7DC901D3675BA000A7761 /* Core.swift in Sources */,
 				47E7DC8A1D33FB85000A7761 /* Screen2VC.swift in Sources */,
+				47E7DC921D3677AA000A7761 /* SavedRollsVC.swift in Sources */,
 				47E7DC881D33E140000A7761 /* MainVC.swift in Sources */,
+				473129A91D367DF100C36CC0 /* SaveRollVC.swift in Sources */,
 				47E7DC8C1D3401E8000A7761 /* screen3VC.swift in Sources */,
 				47E7DC8E1D352C9A000A7761 /* SavedRollList.swift in Sources */,
 				47E7DC5A1D33DCD5000A7761 /* AppDelegate.swift in Sources */,
